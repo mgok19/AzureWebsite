@@ -3,4 +3,4 @@ In this project, I demonstrate understanding of building a WebSite using Azure P
 
 View project specification in WebSite Project.docx
 
-View my source code in the Project2 folder
+View my source code in the Project2 folder (most of the work is in the Model, View, and Controller folders)
