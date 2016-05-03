@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Michael O'Keefe - Project 2</h1>
+</div>
+
+@using (Html.BeginForm("LoadData", "Home"))
+{
+    <input type="submit" value="Load Data" />
+    @ViewBag.LoadStatus <br /> <br />
+}
+
+@using (Html.BeginForm("ProcessQuery", "Home"))
+{
+
+    @Html.Label("Last Name") @Html.TextBox("LastName")<br />
+    @Html.Label("First Name") @Html.TextBox("FirstName")<br />
+    @Html.Label("Attribute") @Html.TextBox("Attribute")<br />
+
+    <input type="submit" value="Query" /> <br /> <br />
+    @ViewBag.Query
+}
